@@ -6,14 +6,14 @@ let car={
         return `${this.make} car got started in ${this.year}`;
 
 
-    };
+    }
 };
 console.log(car.start());
 function Person(name,age){
     this.name=name;
     this.age=age;
 
-}\
+}
 let john=new Person("john",20);
 console.log(john.name);
 function Animal(type){
