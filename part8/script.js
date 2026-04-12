@@ -30,5 +30,22 @@ document.getElementById("shoppingList").appendChild(newItem);
    taskList.lastElementChild.remove();
 
    })
+   //exmaple 6
+    document.getElementById("clickMeButton").addEventListener('dblclick',function(){
+        alert("chaicode") ;
+    })
+    ///example 7
+    document.getElementById("teaList").addEventListener('click',function(event){
+        if(event.target && event.target.matches('.teaItem')){
+            alert("you selected:"+event.target.textContent)
+        }
+    })
+  //example 8
+  document.getElementById("feedbackForm").addEventListener('submit',function(event){
+    
+    event.preventDefault();
+    let feedback=document.getElementById("feedbackInput").value;
+    document.getElementById("feedbackDisplay").
+    textContent=`Feedback:${feedback}`
 
-  
+  })
