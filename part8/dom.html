@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #1a1a1a;
+            color:white;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color:#1a1a1a
+        }
+        .hidden{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+     <h1>Javascript DOM</h1>
+     <!--1.accessing the DOM element-->
+     <section id="example-1">
+        <h2>ACCESSING DOM ELEMENTS</h2>
+        <p id="myParagraph">This is a a paragraph.Click the button to change me!</p>
+        <button id="changeTextButton">Change Text</button>
+     </section>
+     <!--2.Traversing the DOM-->
+     <section id="example-2">
+        <h2>TRAVERSING THE DOM</h2> 
+        <ul id="citiesList">
+            <li>New York</li>
+            <li>Los Angeles</li>
+            <li>Chicago</li>
+            <li>Houston</li>
+
+        </ul>
+        <button id="highlightFirstCity">Highlight City</button>
+        </section>
+        <!--example3 Manupulating DOM ELEMENTS-->
+        <section id="example-3">
+        <h2>MANIPULATING DOM ELEMENTS</h2>
+        <div id="coffeeOrder">Order:<span id="coffeeType">Latte</span></div>
+        <button id="changeOrder">Change order to Espresso</button>
+        </section>
+        <!--example 4 CREATING AND INSERTING ELEMENT-->
+        <section id="example-4">
+            <h2>CREATING AND INSERTING ELEMENTS</h2>
+            <button id="addNewItem">Add New Item to shopping List</button>
+            <ul id="shoppingList">
+                <li>Milk</li>
+                <li>Eggs</li>
+                <li>Bread</li>
+            </ul>
+        </section>
+        <!--example 5 REMOVING THE DOM ELEMENT-->
+        <section id="example-5">    
+            <h2>REMOVING THE DOM ELEMENT</h2>
+            <ul id="taskList">
+                <li>Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+            </ul>
+            <button id="removeLastTask">Remove Last Task</button>
+        </section>
+
+     <script src="./script.js"></script>
+</body>
+</html>
